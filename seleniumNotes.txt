@@ -1,0 +1,71 @@
+Selenium webdriver:
+it is not a tool
+it is web driver API
+it is collection of Jars file. this files contain packages , classes, functions, interfaces.
+
+Setup selenium:
+https://www.youtube.com/watch?v=IkK7bS6hLms
+
+setup chomedriver: 
+https://www.youtube.com/watch?v=FSetmugrnmY
+
+chrome driver:
+https://chromedriver.storage.googleapis.com/index.html?path=114.0.5735.90/
+*above chrome driver supports only below chrme browser:
+https://www.filepuma.com/download/google_chrome_64bit_114.0.5735.199-35569/
+
+firefox driver:
+https://www.youtube.com/watch?v=avr68JmDLJQ
+
+
+Selenium library (Jars) setup in eclipse project:
+1)Create simple java project > Right click on java project > properties > select java build path > click on libraries > select class path(don’t select modulepath) > add external jars > select from selenium folder.
+
+
+List of websites to practice selenium:
+•	Cleartrip: https://www.cleartrip.com/
+•	https://demo.guru99.com/test/newtours/
+•	http://the-internet.herokuapp.com/ - This is not a full-fledged website, but it offers components of the website that you can test. If you are working on practicing a complex component, I would recommend this site.
+•	https://www.saucedemo.com/ - This is a demo website from SauceLabs. It’s a custom eCommerce site by SauceLabs. But, not with much functionality.
+•	https://ultimateqa.com/automation - This is also a good site. But, it does not have a complete user journey. If you want to practice just a part of a user journey, this is a good site.
+•	http://opensource-demo.orangehrmlive.com/ - This website is not meant to practice test automation. But, you can write a test around this.
+•	https://phptravels.org/ - Similarly, this website is not meant to practice. But, for a short time, you can write tests and execute them. Can't be used for demonstration as it may get changed anytime.
+•	https://demo.openmrs.org/openmrs/ - This is another open-source site. But, can't expect to have it unchanged.
+
+
+Web Elements: button, option, input box, submit, login ,checkbox, drop down, images, list box, web table,  drag and drop, calendar control, sate pickers, links, radio button, elements on website are considered as web elements.
+Locators: 
+Every web elements has different properties like: name, id, cssSelector, xpath these are mainly known as locators.
+(to identify the web elements available on web page. For that we use locators.)
+1.	Name
+2.	Id
+3.	cssSelectors
+4.	xpath
+
+
+
+Test case:
+1.	open browser
+2.	open website
+3.	enter username
+4.	enter password
+5.	submit
+6.	close
+
+Login details properties:
+1.	Username:
+copy element : <input type="text" name="userName" size="10">
+copy xpath: /html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[3]/form/table/tbody/tr[4]/td/table/tbody/tr[2]/td[2]/input
+2.	Password:
+copy element: <input type="password" name="password" size="10">
+copy xpath: /html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[3]/form/table/tbody/tr[4]/td/table/tbody/tr[3]/td[2]
+3.	Submit:
+Copy elemts: <input type="submit" name="submit" value="Submit" style="background-color: #FACB00;border: 1px solid black;font-family:MS Sans Serif;font-size:15px;">
+Copy xpath: /html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[3]/form/table/tbody/tr[4]/td/table/tbody/tr[4]/td[2]/div/input
+
+
+Driver methods:
+1.	driver.findElement(By.name()).sendKeys();
+this methods for : text box / input box
+2.	driver.findElement(By.name()).click();  
+this methods for : radio button, check box, link.
